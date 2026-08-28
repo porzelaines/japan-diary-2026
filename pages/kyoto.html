@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kyoto · Japan Diary</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body data-page="collection">
+  <header class="site-header">
+    <a class="brand" href="../index.html">Japan Diary <span>✶</span></a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="../index.html">Diary</a><a href="food.html">Food</a><a href="trips.html">Trips</a><a href="history.html">History</a><a class="active" href="kyoto.html">Kyoto</a><a href="osaka.html">Osaka</a>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-hero">
+      <div><p class="kicker">City notebook</p><h1>Kyoto.</h1><p class="intro">Save temples, cafés, neighborhoods, shops, walks and little things you want to do in Kyoto.</p></div>
+      <aside class="vintage-note"><span class="note-label">City page</span><strong>places · ideas · notes</strong><span class="note-small">Kyoto collection</span></aside>
+    </section>
+
+    <section class="content-layout">
+      <aside class="paper-card sidebar-card">
+        <div class="section-heading compact"><div><p class="kicker">New item</p><h2>Add</h2></div></div>
+        <form id="collectionForm" class="collection-form" data-storage-key="japan-kyoto-v1">
+          <label>Place / idea<input id="itemTitle" type="text" placeholder="Name" required></label>
+          <label>Area / category<input id="itemMeta" type="text" placeholder="Gion · temple"></label>
+          <label>Notes<textarea id="itemText" placeholder="Why you saved it, opening hours, details…"></textarea></label>
+          <button class="button" type="submit">Save item</button>
+        </form>
+      </aside>
+      <section><div class="section-heading"><div><p class="kicker">Saved</p><h2>Kyoto list</h2></div></div><div id="collectionList" class="collection-grid"></div></section>
+    </section>
+  </main>
+  <script src="../site.js"></script>
+</body>
+</html>
