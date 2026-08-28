@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Japan Diary</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div class="brand" id="brand"></div>
+      <nav class="nav" id="nav"></nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <div class="eyebrow" id="eyebrow"></div>
+        <h1 id="heroTitle"></h1>
+        <p class="lead" id="heroLead"></p>
+      </div>
+      <div class="hero-stack">
+        <div class="polaroid">
+          <div class="photo" id="heroPhoto"></div>
+          <div class="caption" id="heroCaption"></div>
+        </div>
+        <div class="note">
+          <b id="noteTitle"></b>
+          <span id="noteText"></span>
+        </div>
+        <div class="stamp" id="stamp"></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="progress-card">
+        <div>
+          <strong id="progressLabel"></strong>
+          <div class="progress-track"><div id="progressFill" class="progress-fill"></div></div>
+        </div>
+        <div id="progressNum" class="progress-num">0%</div>
+      </div>
+    </section>
+
+    <section id="weeks" class="divider">
+      <div class="section-head">
+        <h2 id="weeksTitle"></h2>
+        <p id="weeksIntro"></p>
+      </div>
+      <div class="week-grid" id="weeksGrid"></div>
+    </section>
+
+    <section id="wishlist" class="divider">
+      <div class="section-head">
+        <h2 id="wishlistTitle"></h2>
+        <p id="wishlistIntro"></p>
+      </div>
+      <div class="grid-2" id="wishlistGrid"></div>
+    </section>
+
+    <section id="routine" class="divider">
+      <div class="section-head">
+        <h2 id="routineTitle"></h2>
+        <p id="routineIntro"></p>
+      </div>
+      <div class="card"><div class="routine" id="routineGrid"></div></div>
+    </section>
+
+    <section id="vlog" class="divider">
+      <div class="section-head">
+        <h2 id="vlogTitle"></h2>
+        <p id="vlogIntro"></p>
+      </div>
+      <div class="vlog-layout">
+        <div class="vlog-cover">
+          <small id="vlogCoverSmall"></small>
+          <h3 id="vlogCoverTitle"></h3>
+          <p id="vlogCoverText"></p>
+        </div>
+        <div class="card">
+          <h3 id="shotsTitle"></h3>
+          <p id="shotsIntro"></p>
+          <div class="shot-grid" id="shotGrid"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="divider">
+      <div class="section-head">
+        <h2 id="workTitle"></h2>
+        <p id="workIntro"></p>
+      </div>
+      <div class="grid-2" id="workGrid"></div>
+    </section>
+
+    <section id="notes" class="divider">
+      <div class="section-head">
+        <h2 id="notesTitle"></h2>
+        <p id="notesIntro"></p>
+      </div>
+      <div class="card">
+        <textarea id="dailyNotes"></textarea>
+        <div class="tiny" id="notesHint"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span id="footerLeft"></span>
+      <span id="footerRight"></span>
+    </footer>
+  </main>
+
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
