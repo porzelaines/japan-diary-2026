@@ -1,5 +1,5 @@
 window.siteContent = {
-  brand: "Lorem Ipsum ✶",
+  brand: "Japan Diaries <3",
   nav: [
     ["Lorem", "#weeks"], ["Ipsum", "#wishlist"], ["Dolor", "#routine"],
     ["Sit", "#vlog"], ["Amet", "#work"], ["Elit", "#notes"]
