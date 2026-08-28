@@ -1,36 +1,27 @@
 # Japan Diary 2026
 
-Personal five-week Japan traineeship diary, checklist and visual journal.
+A personal multi-page Japan travel diary and planning site.
 
-## Edit the content
+## Pages
 
-Almost all visible copy lives in `content.js`.
+- `index.html` — diary entries and personal todo list
+- `pages/food.html` — food and drink places
+- `pages/trips.html` — recommended day trips and weekend ideas
+- `pages/history.html` — personal notes on Japanese history
+- `pages/kyoto.html` — Kyoto places and notes
+- `pages/osaka.html` — Osaka places and notes
 
-Typical changes:
-- `hero` — headline, intro, caption and note
-- `weeks.items` — the five weekly chapters
-- `wishlist.lists` — checklist categories and tasks
-- `routine.items` — weekday rhythm
-- `vlog` — vlog headings and shot ideas
-- `work` — traineeship section
-- `notes` — journal labels
+## Editing content
 
-You normally do **not** need to touch `index.html` or `styles.css` when changing copy.
+The site is designed so most personal content can be added directly in the browser through the forms on each page.
 
-## Edit the design
+Diary entries, todos and saved page items are currently stored in the browser with `localStorage`. This means they stay on that browser/device, but they are not synchronized between devices.
 
-Design tokens and layout live in `styles.css`. The main palette is at the top under `:root`.
+## Design
 
-## Deploy with Vercel
+- `styles.css` contains the shared powder-rose vintage design.
+- `site.js` contains the local browser storage and form behavior.
 
-1. Open Vercel.
-2. Choose **Add New → Project**.
-3. Import the GitHub repository `porzelaines/japan-diary-2026`.
-4. Keep the default settings / static site detection.
-5. Click **Deploy**.
+## Deploying on Vercel
 
-After the first deployment, every commit to the repository's main branch triggers a new Vercel deployment automatically.
-
-## Local checklist storage
-
-Checklist state and diary notes use browser `localStorage`. They persist on one browser/device, but are not yet synchronized across devices.
+Import this GitHub repository as a new Vercel project. No build command is required because the site is static HTML/CSS/JavaScript.
